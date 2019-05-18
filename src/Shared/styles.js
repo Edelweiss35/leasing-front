@@ -15,7 +15,6 @@ export const LogInCard = Card.extend `
 `;
 
 
-
 export const Form = styled.form `
 max-width: 500px;
 margin: 0 2rem;
