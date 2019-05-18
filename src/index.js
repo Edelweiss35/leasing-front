@@ -19,7 +19,18 @@ import 'react-s-alert/dist/s-alert-css-effects/slide.css';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
-
+const Root = () =>
+<Router>
+      <div id="app">
+      
+    <Route exact path="/" component={App} />
+    <Route exact path="/frontend/signup" component={ SignupForm } />
+    <Route exact path="/frontend/main" component= { Main } />
+    <Route exact path="/frontend/React-table" component= { ReactTable } />
+      <Route exact path="/frontend/SecondForm" component= { SecondForm } />
+      <Route exact path="/frontend/ForgotLoginDetails" component= { ForgotLoginForm } />
+  </div>
+</Router>
 
 ReactDOM.render(<Root />, document.getElementById('root'));
 registerServiceWorker();
